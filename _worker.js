@@ -1,7 +1,7 @@
 
 // 部署完成后在网址后面加上这个，获取自建节点和机场聚合节点，/?token=auto或/auto或
 
-let mytoken = 'auto'; //可以随便取，或者uuid生成，https://1024tools.com/uuid
+let mytoken = 'zbb'; //可以随便取，或者uuid生成，https://1024tools.com/uuid
 let BotToken =''; //可以为空，或者@BotFather中输入/start，/newbot，并关注机器人
 let ChatID =''; //可以为空，或者@userinfobot中获取，/start
 let TG = 0; //小白勿动， 开发者专用，1 为推送所有的访问信息，0 为不推送订阅转换后端的访问信息与异常访问
@@ -14,8 +14,81 @@ let cacheTTL = 24 ;//小时，缓存时长
 
 //节点链接 + 订阅链接
 let MainData = `
-vless://b7a392e2-4ef0-4496-90bc-1c37bb234904@cf.090227.xyz:443?encryption=none&security=tls&sni=edgetunnel-2z2.pages.dev&fp=random&type=ws&host=edgetunnel-2z2.pages.dev&path=%2F%3Fed%3D2048#%E5%8A%A0%E5%85%A5%E6%88%91%E7%9A%84%E9%A2%91%E9%81%93t.me%2FCMLiussss%E8%A7%A3%E9%94%81%E6%9B%B4%E5%A4%9A%E4%BC%98%E9%80%89%E8%8A%82%E7%82%B9
-https://sub.xf.free.hr/auto
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@104.16.192.100:2053?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=s14.serv00.com%3A15661#0001
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@104.17.110.181:8443?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=%5B2a01%3A4f8%3Ac2c%3A123f%3A64%3A5%3A6810%3Ac55a%5D#0000001
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@104.17.110.190:8443?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=%5B2a01%3A4f8%3Ac2c%3A123f%3A64%3A5%3A6810%3Ac55a%5D#4
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@104.17.110.186:443?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=104.26.0.0#0000006
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@104.17.110.183:443?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=104.26.0.0#0000003
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@104.17.110.187:2096?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=proxy.xxxxxxxx.tk#0000007
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@104.17.110.182:2083?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=s14.serv00.com%3A15661#0000002
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@104.17.110.185:2096?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=edgetunnel.anycast.eu.org#0000005
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@104.17.110.199:8443?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=%5B2a01%3A4f8%3Ac2c%3A123f%3A64%3A5%3A6810%3Ac55a%5D#5
+trojan://zbb@104.17.110.188:2053?security=tls&sni=yyy.zbb07.us.kg&fp=randomized&type=ws&host=yyy.zbb07.us.kg&path=%2F%3Fed%3D2560#0000008
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@104.17.110.180:2087?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=s14.serv00.com%3A15661#0000004
+trojan://zbb@support.cloudflare.com:443?security=tls&sni=yyy.zbb07.us.kg&fp=randomized&type=ws&host=yyy.zbb07.us.kg&path=%2F%3Fed%3D2560#00000004
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@abuse.cloudflare.com:2096?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=s10.serv00.com%3A15661#004
+trojan://zbb@[2606:4700::6811:6eb9]:2087?security=tls&sni=yyy.zbb07.us.kg&fp=randomized&type=ws&host=yyy.zbb07.us.kg&path=%2F%3Fed%3D2560#000009
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@try.cloudflare.com:2053?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=proxy.xxxxxxxx.tk#001
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@[2606:4700::6811:6eb3]:443?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=104.26.0.0#000003
+trojan://zbb@[2606:4700::6811:6eb1]:2053?security=tls&sni=yyy.zbb07.us.kg&fp=randomized&type=ws&host=yyy.zbb07.us.kg&path=%2F%3Fed%3D2560#000001
+trojan://zbb@pages.cloudflare.com:2096?security=tls&sni=yyy.zbb07.us.kg&fp=randomized&type=ws&host=yyy.zbb07.us.kg&path=%2F%3Fed%3D2560#00000008
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@[2606:4700::6811:6eff]:443?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=104.26.0.0#7
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@ns7.cloudflare.com:8443?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=%5B2603%3Ac025%3A0%3A2f89%3A9%5D%3A8800#008
+trojan://zbb@[2606:4700::6811:6eb0]:2087?security=tls&sni=yyy.zbb07.us.kg&fp=randomized&type=ws&host=yyy.zbb07.us.kg&path=%2F%3Fed%3D2560#000008
+trojan://zbb@radar.cloudflare.com:2087?security=tls&sni=yyy.zbb07.us.kg&fp=randomized&type=ws&host=yyy.zbb07.us.kg&path=%2F%3Fed%3D2560#0009
+trojan://zbb@challenge.developers.cloudflare.com:8443?security=tls&sni=yyy.zbb07.us.kg&fp=randomized&type=ws&host=yyy.zbb07.us.kg&path=%2F%3Fed%3D2560#00000006
+trojan://zbb@[2606:4700::6811:6eb4]:8443?security=tls&sni=yyy.zbb07.us.kg&fp=randomized&type=ws&host=yyy.zbb07.us.kg&path=%2F%3Fed%3D2560#000004
+trojan://zbb@[2606:4700::6811:6eb7]:443?security=tls&sni=yyy.zbb07.us.kg&fp=randomized&type=ws&host=yyy.zbb07.us.kg&path=%2F%3Fed%3D2560#000007
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@blog.cloudflare.com:8443?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=%5B2a01%3A4f8%3Ac2c%3A123f%3A64%3A5%3A6810%3Ac55a%5D#002
+trojan://zbb@[2606:4700::6811:6eb2]:2096?security=tls&sni=yyy.zbb07.us.kg&fp=randomized&type=ws&host=yyy.zbb07.us.kg&path=%2F%3Fed%3D2560#000002
+trojan://zbb@[2606:4700::6811:6eb5]:2053?security=tls&sni=yyy.zbb07.us.kg&fp=randomized&type=ws&host=yyy.zbb07.us.kg&path=%2F%3Fed%3D2560#000005
+trojan://zbb@[2606:4700::6811:6eb6]:2083?security=tls&sni=yyy.zbb07.us.kg&fp=randomized&type=ws&host=yyy.zbb07.us.kg&path=%2F%3Fed%3D2560#000006
+trojan://zbb@www.wto.org:2087?security=tls&sni=yyy.zbb07.us.kg&fp=randomized&type=ws&host=yyy.zbb07.us.kg&path=%2F%3Fed%3D2560#00000001
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@ns4.cloudflare.com:443?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=104.26.0.0#0003
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@www.fortnite.com:2083?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=proxyip.tk#06
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@www.visa.com.tw:443?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=%5B2a01%3A4f8%3Ac2c%3A123f%3A64%3A5%3A6810%3Ac55a%5D#07
+trojan://zbb@portal.cloudflarepartners.com:2083?security=tls&sni=yyy.zbb07.us.kg&fp=randomized&type=ws&host=yyy.zbb07.us.kg&path=%2F%3Fed%3D2560#00000009
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@store.epicgames.com:2053?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=s14.serv00.com%3A15661#03
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@www.visa.com.sg:443?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=104.26.0.0#0004
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@www.visa.com.tw:8443?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=%5B2603%3Ac025%3A0%3A2f89%3A9%5D%3A8800#08
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@[2606:4700::6811:6ec3]:443?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=104.26.0.0#6
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@www.epicgames.com:2096?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=s10.serv00.com%3A15661#04
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@qa.visamiddleeast.com:2053?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=s14.serv00.com%3A15661#00003
+trojan://zbb@ai.cloudflare.com:443?security=tls&sni=yyy.zbb07.us.kg&fp=randomized&type=ws&host=yyy.zbb07.us.kg&path=%2F%3Fed%3D2560#00000002
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@africa.visa.com:443?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=edgetunnel.anycast.eu.org#09
+trojan://zbb@caribbean.visa.com:8443?security=tls&sni=yyy.zbb07.us.kg&fp=randomized&type=ws&host=yyy.zbb07.us.kg&path=%2F%3Fed%3D2560#00000005
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@visa.cn:2087?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=cdn.xn--b6gac.eu.org#05
+trojan://zbb@www.visaeurope.at:2087?security=tls&sni=yyy.zbb07.us.kg&fp=randomized&type=ws&host=yyy.zbb07.us.kg&path=%2F%3Fed%3D2560#00001
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@www.racknerd.com:8443?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=%5B2a01%3A4f8%3Ac2c%3A123f%3A64%3A5%3A6810%3Ac55a%5D#02
+trojan://zbb@time.is:2087?security=tls&sni=yyy.zbb07.us.kg&fp=randomized&type=ws&host=yyy.zbb07.us.kg&path=%2F%3Fed%3D2560#00004
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@store.ubisoft.com:2053?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=s14.serv00.com%3A15661#0002
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@visa.com.hk:443?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=104.26.0.0#00008
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@visa.co.id:443?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=104.26.0.0#00009
+trojan://zbb@visa.com.ai:443?security=tls&sni=yyy.zbb07.us.kg&fp=randomized&type=ws&host=yyy.zbb07.us.kg&path=%2F%3Fed%3D2560#00000003
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@icook.hk:443?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=104.26.0.0#00005
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@visamiddleeast.com:443?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=104.26.0.0#00007
+trojan://zbb@ppc.land:2096?security=tls&sni=yyy.zbb07.us.kg&fp=randomized&type=ws&host=yyy.zbb07.us.kg&path=%2F%3Fed%3D2560#00000007
+vless://a8dbc8e2-3d3e-4654-b028-b2382770a2d8@104.17.110.189:2087?encryption=none&security=tls&sni=yyyty.zcr07.us.kg&fp=randomized&type=ws&host=yyyty.zcr07.us.kg&path=%5B2a01%3A4f8%3Ac2c%3A123f%3A64%3A5%3A6810%3Ac55a%5D#0000009
+vless://223d2d42-4179-4b0a-ab0b-3991facf92d7@ee.r08.us.kg:443?encryption=none&security=tls&sni=ed.n06.us.kg&fp=random&type=ws&host=ed.n06.us.kg&path=%2F%3Fed%3D2560#ee.r08.us.kg
+vless://223d2d42-4179-4b0a-ab0b-3991facf92d7@p.r08.us.kg:443?encryption=none&security=tls&sni=ed.n06.us.kg&fp=random&type=ws&host=ed.n06.us.kg&path=%2F%3Fed%3D2560#p.r08.us.kg
+vless://223d2d42-4179-4b0a-ab0b-3991facf92d7@lia.ns.cloudflare.com:443?encryption=none&security=tls&sni=ed.n06.us.kg&fp=random&type=ws&host=ed.n06.us.kg&path=%2F%3Fed%3D2560#lia.ns.cloudflare.com
+vless://223d2d42-4179-4b0a-ab0b-3991facf92d7@journey.ns.cloudflare.com:443?encryption=none&security=tls&sni=ed.n06.us.kg&fp=random&type=ws&host=ed.n06.us.kg&path=%2F%3Fed%3D2560#journey.ns.cloudflare.com
+vless://223d2d42-4179-4b0a-ab0b-3991facf92d7@armfazh.ns.cloudflare.com:443?encryption=none&security=tls&sni=ed.n06.us.kg&fp=random&type=ws&host=ed.n06.us.kg&path=%2F%3Fed%3D2560#armfazh.ns.cloudflare.com
+vless://223d2d42-4179-4b0a-ab0b-3991facf92d7@n.r08.us.kg:443?encryption=none&security=tls&sni=ed.n06.us.kg&fp=random&type=ws&host=ed.n06.us.kg&path=%2F%3Fed%3D2560#n.r08.us.kg
+vless://223d2d42-4179-4b0a-ab0b-3991facf92d7@ii.r08.us.kg:443?encryption=none&security=tls&sni=ed.n06.us.kg&fp=random&type=ws&host=ed.n06.us.kg&path=%2F%3Fed%3D2560#ii.r08.us.kg
+vless://223d2d42-4179-4b0a-ab0b-3991facf92d7@maciej.ns.cloudflare.com:443?encryption=none&security=tls&sni=ed.n06.us.kg&fp=random&type=ws&host=ed.n06.us.kg&path=%2F%3Fed%3D2560#maciej.ns.cloudflare.com
+vless://223d2d42-4179-4b0a-ab0b-3991facf92d7@hh.r08.us.kg:443?encryption=none&security=tls&sni=ed.n06.us.kg&fp=random&type=ws&host=ed.n06.us.kg&path=%2F%3Fed%3D2560#hh.r08.us.kg
+vless://223d2d42-4179-4b0a-ab0b-3991facf92d7@bb.r08.us.kg:443?encryption=none&security=tls&sni=ed.n06.us.kg&fp=random&type=ws&host=ed.n06.us.kg&path=%2F%3Fed%3D2560#bb.r08.us.kg
+vless://223d2d42-4179-4b0a-ab0b-3991facf92d7@asa.ns.cloudflare.com:443?encryption=none&security=tls&sni=ed.n06.us.kg&fp=random&type=ws&host=ed.n06.us.kg&path=%2F%3Fed%3D2560#asa.ns.cloudflare.com
+vless://223d2d42-4179-4b0a-ab0b-3991facf92d7@b.r08.us.kg:443?encryption=none&security=tls&sni=ed.n06.us.kg&fp=random&type=ws&host=ed.n06.us.kg&path=%2F%3Fed%3D2560#b.r08.us.kg
+vless://223d2d42-4179-4b0a-ab0b-3991facf92d7@ff.r08.us.kg:443?encryption=none&security=tls&sni=ed.n06.us.kg&fp=random&type=ws&host=ed.n06.us.kg&path=%2F%3Fed%3D2560#ff.r08.us.kg
+vless://223d2d42-4179-4b0a-ab0b-3991facf92d7@i.r08.us.kg:443?encryption=none&security=tls&sni=ed.n06.us.kg&fp=random&type=ws&host=ed.n06.us.kg&path=%2F%3Fed%3D2560#I.r08.us.kg
+vless://223d2d42-4179-4b0a-ab0b-3991facf92d7@aa.r08.us.kg:443?encryption=none&security=tls&sni=ed.n06.us.kg&fp=random&type=ws&host=ed.n06.us.kg&path=%2F%3Fed%3D2560#aa.r08.us.kg
+vless://223d2d42-4179-4b0a-ab0b-3991facf92d7@m.r08.us.kg:443?encryption=none&security=tls&sni=ed.n06.us.kg&fp=random&type=ws&host=ed.n06.us.kg&path=%2F%3Fed%3D2560#m.r08.us.kg
+vless://223d2d42-4179-4b0a-ab0b-3991facf92d7@a.r08.us.kg:443?encryption=none&security=tls&sni=ed.n06.us.kg&fp=random&type=ws&host=ed.n06.us.kg&path=%2F%3Fed%3D2560#a.r08.us.kg
+
+
+
 `
 
 let urls = [];
